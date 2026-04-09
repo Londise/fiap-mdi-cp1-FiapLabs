@@ -24,7 +24,7 @@ O **FIAP Labs** foi pensado para automatizar essa consulta e reserva. O app perm
 ### Estrutura do projeto
 O projeto foi estruturado utilizando **React Native** com **Expo**. Optamos por uma arquitetura de componentes reutilizáveis (como o ***Button*** e ***FormAgendamento***) para garantir a consistência visual e facilitar a manutenção do código. Para a estrutura de pastas, escolhimos distribuir os arquivos com base nos tipos de arquivos (layer-based) para poder ter uma estrutura inicial e enxuta, porém legível e organizada o suficiente para esta primeira versão.
 
-Estrutura de pastas
+📁 **Estrutura de pastas**
 ```
 └── assets/
     src/
@@ -42,7 +42,8 @@ Estrutura de pastas
 - **useEffect:** Utilizado para a sincronização de dados e atualização da interface, incluindo mecanismos de polling para simular a atualização em tempo real da lista de reservas.
 
 ### Navegação
-A navegação foi organizada através do Expo Router, utilizando o padrão de rotas para o fluxo de telas e Bottom Tabs para alternar entre consulta de salas, procura de salas e os agendamentos do usuário, garantindo uma experiência fluida e intuitiva.
+A navegação foi organizada através do Expo Router, utilizando o padrão de rotas para o fluxo de telas e Tabs para alternar entre as diferentes telas também definidas via Expo Router que possui essa funcionalidade implementada através do arquivo ```_layout.js```. Assim, as rotas do projeto criadas foram: Labs Disponíveis, Procura de Salas e Agendamentos do usuário.
+Não foi definida uma rota para a criação do formulário de agendamento de salas, visto que este formulário atua como um modal no programa e preferi tratá-lo como um componente, sendo importado internamente para ser chamado na criação de um agendamento.
 
 ## 🚀 Como Rodar o Projeto
 
