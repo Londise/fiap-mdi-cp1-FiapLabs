@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Londer",
+    "slug": "Londer",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "",
+        "backgroundImage": "",
+        "monochromeImage": ""
+      }
+    },
+    "web": {
+      "favicon": ""
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
